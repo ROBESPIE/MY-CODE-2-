@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBest Promo Mogi</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ff1500ec;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 1.8rem;
+        
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Banner */
+        #banner {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(to right, #dd1a08, #ff9068);
+            color: white;
+        }
+
+        #banner .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: white;
+            color: #ff6f61;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        #banner .btn:hover {
+            background-color: #ffe6e1;
+        }
+
+        /* Promoções */
+        #promocoes {
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        #promocoes h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #promocoes .carrossel {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        #promocoes .item {
+            background: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #promocoes .item img {
+            max-width: 150px;
+            border-radius: 5px;
+        }
+
+        #promocoes .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #ff1500ec;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Produtos */
+        #produtos {
+            padding: 2rem;
+        }
+
+        #produtos h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #produtos .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        #produtos .card {
+            background: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #produtos .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        /* WhatsApp */
+        #whatsapp {
+            text-align: center;
+            padding: 2rem;
+            background-color: #ff1500ec;
+            color: white;
+        }
+
+        #whatsapp .btn-whatsapp {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: white;
+            color: #ff6f61;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TheBest Promo Mogi</h1>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#whatsapp">WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/thebestpromo_mogi/" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <h2>Bem-vindo ao TheBestPromo_Mogi</h2>
+        <p>Seu portal para as melhores promoções da Shopee e muito mais!</p>
+        <a href="#produtos" class="btn">Explorar Produtos</a>
+    </section>
+
+    <section id="promocoes">
+        <h2>Ofertas do Dia</h2>
+        <div class="carrossel">
+            <div class="item">
+                <img src="https://via.placeholder.com/200" alt="Promoção 1">
+                <p><strong>Smartwatch</strong> - R$199,90</p>
+                <a href="#" class="btn">Compre Agora</a>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/200" alt="Promoção 2">
+                <p><strong>Câmera de Segurança</strong> - R$399,90</p>
+                <a href="#" class="btn">Compre Agora</a>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/200" alt="Promoção 3">
+                <p><strong>Fone Bluetooth</strong> - R$149,90</p>
+                <a href="#" class="btn">Compre Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos Populares</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://down-br.img.susercontent.com/file/d35468ea255f5f2dc968a47b723c1d3d@resize_w450_nl.webp" alt="Produto 1">
+                <h3>IPhone 11 128gb/64gb Original | Celular IPhone Apple</h3>
+                <p>A partir de R$1.849,90</p>
+                <a href="https://br.shp.ee/JXkNXQA" class="btn">Ver Mais</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Produto 2">
+                <h3>Fone com Cancelamento</h3>
+                <p>A partir de R$249,90</p>
+                <a href="#" class="btn">Ver Mais</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Produto 3">
+                <h3>Mochila Casual</h3>
+                <p>A partir de R$89,90</p>
+                <a href="#" class="btn">Ver Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="whatsapp">
+        <h2>Entre no Grupo do WhatsApp</h2>
+        <p>Receba promoções exclusivas em tempo real!</p>
+        <a href="https://chat.whatsapp.com/Fy8pqVlt0u3Jf0Oi0s9Nf4" class="btn-whatsapp">Entrar no Grupo</a>
+    </section>
+
+    <footer>
+        <p>© 2025 TheBestPromo_Mogi - Todos os direitos reservados.</p>
+        <p>Siga-nos no <a href="https://www.instagram.com/thebestpromo_mogi/" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+
+</html>
